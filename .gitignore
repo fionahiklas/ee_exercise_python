@@ -92,4 +92,7 @@ ENV/
 # Virtualenv
 matrix
 
+# Project files
+.idea
+*.iml
 
