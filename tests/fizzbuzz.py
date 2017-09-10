@@ -1,10 +1,9 @@
-import os
-import sys
-sys.path.insert(0, os.path.abspath('lib'))
 
 import unittest
 
-from fizzbuzz import FizzBuzz
+import context
+
+from fizzbuzz import MainClass
 
 #
 # Example based on code here: https://docs.python.org/2/library/unittest.html
@@ -12,7 +11,7 @@ from fizzbuzz import FizzBuzz
 class TestFizzBuzz(unittest.TestCase):
 
   def setUp(self):
-      self.fizzbuzz = FizzBuzz()
+      self.fizzbuzz = MainClass()
 
   def test_fizz_number(self):
     result = self.fizzbuzz.fizz(4)
