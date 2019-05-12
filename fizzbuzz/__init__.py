@@ -1,2 +1,2 @@
-from .main_class import MainClass
+from main_class import MainClass
 
